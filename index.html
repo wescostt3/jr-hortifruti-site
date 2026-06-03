@@ -42,6 +42,7 @@
 				<ul class="submenu">
 					<li><a href="#home" onclick="toggle.menu()">Início</a></li>
 					<li><a href="#about" onclick="toggle.menu()">Sobre Nós</a></li>
+					<li><a href="#seasonal-calendar" onclick="toggle.menu()">Calendário de Épocas</a></li>
 					<li><a href="#products" onclick="toggle.menu()">Nossos Produtos</a></li>
 					<li><a href="#how-it-works" onclick="toggle.menu()">Como Funciona</a></li>
 					<li><a href="#delivery" onclick="toggle.menu()">Entrega & Localização</a></li>
@@ -60,7 +61,9 @@
 		<a class="nousContacter button invert" style="margin-top: 30px;" href="https://wa.me/5521956893764?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20JR%20Hortifruti%20Delivery%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank"><span class="traitL"></span><span class="text">Chamar no WhatsApp</span><span class="traitR"></span></a>
 	</div>
 	<div class="bgs">
-		<div id="bg-folha" style="background-image: url('public/folha-de-bananeira.jpg'); opacity: 0.15; width: 100%; height: 100%;"></div>
+		<video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.15; z-index: 1;">
+			<source src="media/automne.mp4" type="video/mp4">
+		</video>
 	</div>
 </nav>
 
@@ -157,8 +160,11 @@
 						<p>Receba no conforto da sua casa com agilidade e cuidado, dentro da área de entrega de Sarapuí e região.</p>
 					</li>
 				</ul>
-			</div>
-		</div>
+	</section>
+
+	<!-- SECTION: CALENDÁRIO SAZONAL -->
+	<section class="section-container" id="seasonal-calendar" style="background-color: var(--cream);">
+		<div class="wrap" id="seasonal-calendar-mount"></div>
 	</section>
 
 	<!-- SECTION: PRODUTOS -->
@@ -167,150 +173,8 @@
 			<h2 class="section-title">Nossos Produtos</h2>
 			<p class="section-subtitle">Confira nossa seleção semanal. A disponibilidade varia conforme o estoque do dia e a safra, garantindo sempre itens fresquinhos.</p>
 			
-			<div class="products-grid">
-				<!-- Abacaxi -->
-				<div class="product-card">
-					<div class="product-image-container">
-						<img class="product-image" src="public/abacaxi.png" alt="Abacaxi" loading="lazy" decoding="async">
-						<span class="product-badge">Fresco do Dia</span>
-					</div>
-					<div class="product-info">
-						<p class="product-category">Frutas</p>
-						<h3 class="product-name">Abacaxi</h3>
-						<p class="product-desc">Fruta tropical selecionada e bem madura, ideal para sucos, sobremesas ou consumo natural.</p>
-					</div>
-					<a class="product-action" href="https://wa.me/5521956893764?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20se%20o%20Abacaxi%20est%C3%A1%20dispon%C3%ADvel%20hoje." target="_blank">Consultar Disponibilidade</a>
-				</div>
-				<!-- Abobrinha -->
-				<div class="product-card">
-					<div class="product-image-container">
-						<img class="product-image" src="public/abobrinha.png" alt="Abobrinha" loading="lazy" decoding="async">
-						<span class="product-badge">Fresco do Dia</span>
-					</div>
-					<div class="product-info">
-						<p class="product-category">Legumes</p>
-						<h3 class="product-name">Abobrinha</h3>
-						<p class="product-desc">Legumes tenros e versáteis, perfeitos para grelhados, saladas mornas e sopas leves.</p>
-					</div>
-					<a class="product-action" href="https://wa.me/5521956893764?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20se%20a%20Abobrinha%20est%C3%A1%20dispon%C3%ADvel%20hoje." target="_blank">Consultar Disponibilidade</a>
-				</div>
-				<!-- Aipim Manteiga -->
-				<div class="product-card">
-					<div class="product-image-container">
-						<img class="product-image" src="public/Aipim manteiga.png" alt="Aipim Manteiga" loading="lazy" decoding="async">
-						<span class="product-badge">Fresco do Dia</span>
-					</div>
-					<div class="product-info">
-						<p class="product-category">Raízes</p>
-						<h3 class="product-name">Aipim Manteiga</h3>
-						<p class="product-desc">Aipim extremamente macio ao cozinhar, ideal para bolos, fritar ou receitas caseiras.</p>
-					</div>
-					<a class="product-action" href="https://wa.me/5521956893764?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20se%20o%20Aipim%20Manteiga%20est%C3%A1%20dispon%C3%ADvel%20hoje." target="_blank">Consultar Disponibilidade</a>
-				</div>
-				<!-- Banana -->
-				<div class="product-card">
-					<div class="product-image-container">
-						<img class="product-image" src="public/banana.png" alt="Banana" loading="lazy" decoding="async">
-						<span class="product-badge">Fresco do Dia</span>
-					</div>
-					<div class="product-info">
-						<p class="product-category">Frutas</p>
-						<h3 class="product-name">Banana</h3>
-						<p class="product-desc">Bananas doces e selecionadas para o lanche da família, receitas ou café da manhã.</p>
-					</div>
-					<a class="product-action" href="https://wa.me/5521956893764?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20se%20a%20Banana%20est%C3%A1%20dispon%C3%ADvel%20hoje." target="_blank">Consultar Disponibilidade</a>
-				</div>
-				<!-- Caqui doce -->
-				<div class="product-card">
-					<div class="product-image-container">
-						<img class="product-image" src="public/Caqui-doce.png" alt="Caqui doce" loading="lazy" decoding="async">
-						<span class="product-badge">Fresco do Dia</span>
-					</div>
-					<div class="product-info">
-						<p class="product-category">Frutas</p>
-						<h3 class="product-name">Caqui Doce</h3>
-						<p class="product-desc">Caquis bem doces e firmes, selecionados na safra para máxima qualidade.</p>
-					</div>
-					<a class="product-action" href="https://wa.me/5521956893764?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20se%20o%20Caqui%20Doce%20est%C3%A1%20dispon%C3%ADvel%20hoje." target="_blank">Consultar Disponibilidade</a>
-				</div>
-				<!-- Goiaba -->
-				<div class="product-card">
-					<div class="product-image-container">
-						<img class="product-image" src="public/goiaba.png" alt="Goiaba" loading="lazy" decoding="async">
-						<span class="product-badge">Fresco do Dia</span>
-					</div>
-					<div class="product-info">
-						<p class="product-category">Frutas</p>
-						<h3 class="product-name">Goiaba</h3>
-						<p class="product-desc">Goiabas frescas vermelhas e perfumadas, prontas para consumo natural ou doces.</p>
-					</div>
-					<a class="product-action" href="https://wa.me/5521956893764?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20se%20a%20Goiaba%20est%C3%A1%20dispon%C3%ADvel%20hoje." target="_blank">Consultar Disponibilidade</a>
-				</div>
-				<!-- Maçã -->
-				<div class="product-card">
-					<div class="product-image-container">
-						<img class="product-image" src="public/maca.png" alt="Maçã" loading="lazy" decoding="async">
-						<span class="product-badge">Fresco do Dia</span>
-					</div>
-					<div class="product-info">
-						<p class="product-category">Frutas</p>
-						<h3 class="product-name">Maçã</h3>
-						<p class="product-desc">Maçãs vermelhas e crocantes, a escolha perfeita para um lanche saudável.</p>
-					</div>
-					<a class="product-action" href="https://wa.me/5521956893764?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20se%20a%20Ma%C3%A7%C3%A3%20est%C3%A1%20dispon%C3%ADvel%20hoje." target="_blank">Consultar Disponibilidade</a>
-				</div>
-				<!-- Morangos -->
-				<div class="product-card">
-					<div class="product-image-container">
-						<img class="product-image" src="public/morangos.png" alt="Morangos" loading="lazy" decoding="async">
-						<span class="product-badge">Fresco do Dia</span>
-					</div>
-					<div class="product-info">
-						<p class="product-category">Frutas</p>
-						<h3 class="product-name">Morangos</h3>
-						<p class="product-desc">Morangos vermelhos, firmes e frescos, colhidos no ponto ideal de maturação.</p>
-					</div>
-					<a class="product-action" href="https://wa.me/5521956893764?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20se%20os%20Morangos%20est%C3%A3o%20dispon%C3%ADveis%20hoje." target="_blank">Consultar Disponibilidade</a>
-				</div>
-				<!-- Quiabo -->
-				<div class="product-card">
-					<div class="product-image-container">
-						<img class="product-image" src="public/quiabo.png" alt="Quiabo" loading="lazy" decoding="async">
-						<span class="product-badge">Fresco do Dia</span>
-					</div>
-					<div class="product-info">
-						<p class="product-category">Legumes</p>
-						<h3 class="product-name">Quiabo</h3>
-						<p class="product-desc">Quiabos jovens e macios, ideais para refogados e pratos tradicionais brasileiros.</p>
-					</div>
-					<a class="product-action" href="https://wa.me/5521956893764?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20se%20o%20Quiabo%20est%C3%A1%20dispon%C3%ADvel%20hoje." target="_blank">Consultar Disponibilidade</a>
-				</div>
-				<!-- Quiabo Luxo -->
-				<div class="product-card">
-					<div class="product-image-container">
-						<img class="product-image" src="public/quiabo-luxo.png" alt="Quiabo Luxo" loading="lazy" decoding="async">
-						<span class="product-badge">Fresco do Dia</span>
-					</div>
-					<div class="product-info">
-						<p class="product-category">Legumes</p>
-						<h3 class="product-name">Quiabo Luxo</h3>
-						<p class="product-desc">Quiabo super selecionado em bandeja especial, sem fibras e com máxima qualidade.</p>
-					</div>
-					<a class="product-action" href="https://wa.me/5521956893764?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20se%20o%20Quiabo%20Luxo%20est%C3%A1%20dispon%C3%ADvel%20hoje." target="_blank">Consultar Disponibilidade</a>
-				</div>
-				<!-- Uvas -->
-				<div class="product-card">
-					<div class="product-image-container">
-						<img class="product-image" src="public/uvas.png" alt="Uvas" loading="lazy" decoding="async">
-						<span class="product-badge">Fresco do Dia</span>
-					</div>
-					<div class="product-info">
-						<p class="product-category">Frutas</p>
-						<h3 class="product-name">Uvas</h3>
-						<p class="product-desc">Uvas doces e frescas, selecionadas em cachos ideais para consumo rápido.</p>
-					</div>
-					<a class="product-action" href="https://wa.me/5521956893764?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20se%20as%20Uvas%20est%C3%A3o%20dispon%C3%ADveis%20hoje." target="_blank">Consultar Disponibilidade</a>
-				</div>
+			<div class="products-grid" id="products-grid-mount">
+				<!-- Dynamic products grid rendered by JS -->
 			</div>
 		</div>
 	</section>
@@ -525,6 +389,7 @@
 	</a>
 
 	<script type="text/javascript" src="js/script.min.js" id="script-js"></script>
+	<script type="module" src="src/app.js"></script>
 
 	<!-- CLIENT-SIDE ROUTING OVERRIDE FOR ONE-PAGE LAYOUT -->
 	<script>
