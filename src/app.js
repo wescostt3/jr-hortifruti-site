@@ -5,7 +5,7 @@ import { createSeasonalCalendar } from "./components/SeasonalCalendar.js";
 import { createCartDrawer } from "./components/CartDrawer.js";
 
 // Configuration Constants
-const WHATSAPP_PEDIDOS = "5521956893764"; // Official JR Hortifruti number
+const WHATSAPP_PEDIDOS = "5521969035431"; // Official JR Hortifruti number
 
 // Cart State (Persisted in localStorage)
 let cart = [];
