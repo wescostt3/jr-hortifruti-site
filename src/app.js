@@ -175,13 +175,14 @@ function showToast(message) {
 
   container.appendChild(toast);
 
-  // Remove toast after animation completes
+  // Remove toast after 3 seconds
   setTimeout(() => {
     toast.classList.add("fade-out");
-    toast.addEventListener("transitionend", () => {
+    // Wait for the CSS fade-out transition (300ms) to complete before removing
+    setTimeout(() => {
       toast.remove();
-    });
-  }, 2500);
+    }, 350);
+  }, 3000);
 }
 
 // Application Initialization

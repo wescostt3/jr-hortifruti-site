@@ -1181,9 +1181,9 @@ footer a:after {
 
 /* Custom logo sizing and menu color overrides */
 #logo img {
-  height: 8.5em !important;
+  height: 11em !important;
   width: auto !important;
-  max-height: 140px !important;
+  max-height: 170px !important;
 }
 
 #menu .submenu a,
@@ -1200,9 +1200,25 @@ footer a:after {
 
 /* Adjust fixed header scale behavior for the larger circular logo */
 #header.fix #logo img {
-  height: 5em !important;
-  max-height: 80px !important;
+  height: 7em !important;
+  max-height: 110px !important;
 }
 #header.fix #logo p {
-  bottom: -15px !important;
+  bottom: -22px !important;
 }
+
+/* Header background override to eliminate legacy blue and use brand green */
+#header.fix {
+  background: rgba(18, 74, 38, 0.95) !important;
+}
+#header+.cache {
+  background: rgba(18, 74, 38, 0.95) !important;
+}
+
+/* Slogan buttons size override inside Hero */
+#slogan .button {
+  padding: 12px 28px 12px 50px !important;
+  font-size: 0.95em !important;
+  letter-spacing: 3px !important;
+}
+

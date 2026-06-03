@@ -97,5 +97,104 @@ export const products = [
     desc: "Uvas doces e frescas, selecionadas em cachos ideais para consumo rápido.",
     image: "public/uvas.png",
     badge: "Fresco do Dia"
+  },
+  {
+    id: "ameixa",
+    name: "Ameixa",
+    category: "Frutas",
+    unit: "kg",
+    desc: "Ameixas selecionadas e doces, com polpa macia e saborosa para consumo fresco.",
+    image: "public/ameixa.png",
+    badge: "Fresco do Dia"
+  },
+  {
+    id: "pimentao",
+    name: "Pimentão Verde",
+    category: "Legumes",
+    unit: "kg",
+    desc: "Pimentões verdes frescos e crocantes, ideais para saladas, refogados e temperos.",
+    image: "public/pimentão.jpg",
+    badge: "Fresco do Dia"
+  },
+  {
+    id: "macaxeira",
+    name: "Macaxeira",
+    category: "Raízes",
+    unit: "kg",
+    desc: "Raiz de macaxeira de excelente qualidade, perfeita para cozinhar e preparar pratos típicos.",
+    image: "public/macaxeira-aipim.png",
+    badge: "Fresco do Dia"
+  },
+  {
+    id: "abacate",
+    name: "Abacate",
+    category: "Frutas",
+    unit: "unidade",
+    desc: "Abacate cremoso e maduro no ponto, perfeito para cremes, saladas e vitaminas.",
+    image: "public/abacate.png",
+    badge: "Fresco do Dia"
+  },
+  {
+    id: "tangerina",
+    name: "Tangerina",
+    category: "Frutas",
+    unit: "kg",
+    desc: "Tangerinas selecionadas, muito doces e suculentas, ricas em vitamina C.",
+    image: "public/tangerina.png",
+    badge: "Fresco do Dia"
+  },
+  {
+    id: "laranja",
+    name: "Laranja",
+    category: "Frutas",
+    unit: "kg",
+    desc: "Laranjas frescas e suculentas, perfeitas para sucos ou consumo natural.",
+    image: "public/laranja.png",
+    badge: "Fresco do Dia"
+  },
+  {
+    id: "mamao",
+    name: "Mamão",
+    category: "Frutas",
+    unit: "unidade",
+    desc: "Mamão selecionado, doce e macio, ideal para o café da manhã ou sobremesas.",
+    image: "public/mamao.png",
+    badge: "Fresco do Dia"
+  },
+  {
+    id: "limao",
+    name: "Limão",
+    category: "Frutas",
+    unit: "kg",
+    desc: "Limões frescos e com bastante suco, ideais para temperar e preparar limonadas.",
+    image: "public/limao.png",
+    badge: "Fresco do Dia"
+  },
+  {
+    id: "cenoura",
+    name: "Cenoura",
+    category: "Legumes",
+    unit: "kg",
+    desc: "Cenouras crocantes e selecionadas, ricas em nutrientes, perfeitas para saladas e refogados.",
+    image: "public/cenoura.png",
+    badge: "Fresco do Dia"
+  },
+  {
+    id: "tomate",
+    name: "Tomate",
+    category: "Legumes",
+    unit: "kg",
+    desc: "Tomates frescos e maduros, ideais para molhos, saladas e preparos do dia a dia.",
+    image: "public/tomate.png",
+    badge: "Fresco do Dia"
+  },
+  {
+    id: "batata-doce",
+    name: "Batata-Doce",
+    category: "Raízes",
+    unit: "kg",
+    desc: "Batata-doce selecionada, saborosa e nutritiva, perfeita para assar ou cozinhar.",
+    image: "public/batata-doce.png",
+    badge: "Fresco do Dia"
   }
 ];
