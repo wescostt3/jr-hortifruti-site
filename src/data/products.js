@@ -5,7 +5,7 @@ export const products = [
     category: "Frutas",
     unit: "unidade",
     desc: "Fruta tropical selecionada e bem madura, ideal para sucos, sobremesas ou consumo natural.",
-    image: "public/abacaxi.png",
+    image: "public/abacaxi.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -14,7 +14,7 @@ export const products = [
     category: "Legumes",
     unit: "kg",
     desc: "Legumes tenros e versáteis, perfeitos para grelhados, saladas mornas e sopas leves.",
-    image: "public/abobrinha.png",
+    image: "public/abobrinha.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -23,7 +23,7 @@ export const products = [
     category: "Raízes",
     unit: "kg",
     desc: "Aipim extremamente macio ao cozinhar, ideal para bolos, fritar ou receitas caseiras.",
-    image: "public/Aipim manteiga.png",
+    image: "public/Aipim manteiga.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -32,7 +32,7 @@ export const products = [
     category: "Frutas",
     unit: "dúzia",
     desc: "Bananas doces e selecionadas para o lanche da família, receitas ou café da manhã.",
-    image: "public/banana.png",
+    image: "public/banana.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -41,7 +41,7 @@ export const products = [
     category: "Frutas",
     unit: "kg",
     desc: "Caquis bem doces e firmes, selecionados na safra para máxima qualidade.",
-    image: "public/Caqui-doce.png",
+    image: "public/Caqui-doce.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -50,7 +50,7 @@ export const products = [
     category: "Frutas",
     unit: "kg",
     desc: "Goiabas frescas vermelhas e perfumadas, prontas para consumo natural ou doces.",
-    image: "public/goiaba.png",
+    image: "public/goiaba.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -59,7 +59,7 @@ export const products = [
     category: "Frutas",
     unit: "kg",
     desc: "Maçãs vermelhas e crocantes, a escolha perfeita para um lanche saudável.",
-    image: "public/maca.png",
+    image: "public/maca.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -68,7 +68,7 @@ export const products = [
     category: "Frutas",
     unit: "bandeja",
     desc: "Morangos vermelhos, firmes e frescos, colhidos no ponto ideal de maturação.",
-    image: "public/morangos.png",
+    image: "public/morangos.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -77,7 +77,7 @@ export const products = [
     category: "Legumes",
     unit: "kg",
     desc: "Quiabos jovens e macios, ideais para refogados e pratos tradicionais brasileiros.",
-    image: "public/quiabo.png",
+    image: "public/quiabo.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -86,7 +86,7 @@ export const products = [
     category: "Legumes",
     unit: "bandeja",
     desc: "Quiabo super selecionado em bandeja especial, sem fibras e com máxima qualidade.",
-    image: "public/quiabo-luxo.png",
+    image: "public/quiabo-luxo.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -95,7 +95,7 @@ export const products = [
     category: "Frutas",
     unit: "bandeja",
     desc: "Uvas doces e frescas, selecionadas em cachos ideais para consumo rápido.",
-    image: "public/uvas.png",
+    image: "public/uvas.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -104,7 +104,7 @@ export const products = [
     category: "Frutas",
     unit: "kg",
     desc: "Ameixas selecionadas e doces, com polpa macia e saborosa para consumo fresco.",
-    image: "public/ameixa.png",
+    image: "public/ameixa.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -113,7 +113,7 @@ export const products = [
     category: "Legumes",
     unit: "kg",
     desc: "Pimentões verdes frescos e crocantes, ideais para saladas, refogados e temperos.",
-    image: "public/pimentão.jpg",
+    image: "public/pimentão.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -122,7 +122,7 @@ export const products = [
     category: "Raízes",
     unit: "kg",
     desc: "Raiz de macaxeira de excelente qualidade, perfeita para cozinhar e preparar pratos típicos.",
-    image: "public/macaxeira-aipim.png",
+    image: "public/macaxeira-aipim.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -131,7 +131,7 @@ export const products = [
     category: "Frutas",
     unit: "unidade",
     desc: "Abacate cremoso e maduro no ponto, perfeito para cremes, saladas e vitaminas.",
-    image: "public/abacate.png",
+    image: "public/abacate.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -140,7 +140,7 @@ export const products = [
     category: "Frutas",
     unit: "kg",
     desc: "Tangerinas selecionadas, muito doces e suculentas, ricas em vitamina C.",
-    image: "public/tangerina.png",
+    image: "public/tangerina.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -149,7 +149,7 @@ export const products = [
     category: "Frutas",
     unit: "kg",
     desc: "Laranjas frescas e suculentas, perfeitas para sucos ou consumo natural.",
-    image: "public/laranja.png",
+    image: "public/laranja.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -158,7 +158,7 @@ export const products = [
     category: "Frutas",
     unit: "unidade",
     desc: "Mamão selecionado, doce e macio, ideal para o café da manhã ou sobremesas.",
-    image: "public/mamao.png",
+    image: "public/mamao.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -167,7 +167,7 @@ export const products = [
     category: "Frutas",
     unit: "kg",
     desc: "Limões frescos e com bastante suco, ideais para temperar e preparar limonadas.",
-    image: "public/limao.png",
+    image: "public/limao.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -176,7 +176,7 @@ export const products = [
     category: "Legumes",
     unit: "kg",
     desc: "Cenouras crocantes e selecionadas, ricas em nutrientes, perfeitas para saladas e refogados.",
-    image: "public/cenoura.png",
+    image: "public/cenoura.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -185,7 +185,7 @@ export const products = [
     category: "Legumes",
     unit: "kg",
     desc: "Tomates frescos e maduros, ideais para molhos, saladas e preparos do dia a dia.",
-    image: "public/tomate.png",
+    image: "public/tomate.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -194,7 +194,7 @@ export const products = [
     category: "Raízes",
     unit: "kg",
     desc: "Batata-doce selecionada, saborosa e nutritiva, perfeita para assar ou cozinhar.",
-    image: "public/batata-doce.png",
+    image: "public/batata-doce.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -203,7 +203,7 @@ export const products = [
     category: "Legumes",
     unit: "bandeja",
     desc: "Milho verde fresco e doce, perfeito para cozinhar, assar ou preparar receitas típicas juninas.",
-    image: "public/milho.png",
+    image: "public/milho.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -212,7 +212,7 @@ export const products = [
     category: "Frutas",
     unit: "kg",
     desc: "Carambolas frescas e selecionadas, com formato de estrela e sabor levemente azedinho e refrescante.",
-    image: "public/carambola.png",
+    image: "public/carambola.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -221,7 +221,7 @@ export const products = [
     category: "Frutas",
     unit: "kg",
     desc: "Mexericas bem docinhas e fáceis de descascar, extremamente aromáticas e frescas.",
-    image: "public/mexerica.png",
+    image: "public/mexerica.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -230,7 +230,7 @@ export const products = [
     category: "Frutas",
     unit: "kg",
     desc: "Kiwis selecionados de polpa verde e suculenta, ricos em vitaminas e saborosos.",
-    image: "public/kiwi.png",
+    image: "public/kiwi.webp",
     badge: "Fresco do Dia"
   },
   {
@@ -239,7 +239,7 @@ export const products = [
     category: "Verduras",
     unit: "maço",
     desc: "Alface crespa fresca e crocante, perfeita para saladas saudáveis no dia a dia.",
-    image: "public/alface.png",
+    image: "public/alface.webp",
     badge: "Fresco do Dia"
   }
 ];

@@ -9,7 +9,7 @@ Initial release of the migrated JR Hortifruti Delivery website.
 - Added custom HTML layout grid for Nossos Produtos (Frutas, Legumes, Raízes) using `public` assets.
 - Added Como Funciona steps grid section.
 - Added Entrega section with Google Maps and address cards.
-- Added Quem Atende Você section featuring founder Junior's photo (`public/junior-proprietario-hortifruti.png`).
+- Added Quem Atende Você section featuring founder Junior's photo (`public/junior-proprietario-hortifruti.webp`).
 - Added FAQ section with local delivery and purchase questions.
 - Added Contato section displaying CNPJ, address, Instagram link, and a main WhatsApp conversion CTA.
 - Added floating green WhatsApp message CTA button at the bottom right.
@@ -19,7 +19,7 @@ Initial release of the migrated JR Hortifruti Delivery website.
 - Copied all template source folders from `COPY site completo` to the root workspace directory.
 - Replaced `<head>` metadatas in `index.html` with new title, description, keywords, Open Graph, Twitter cards, and google Outfit/Big Shoulders Display font link.
 - Replaced header and menu logos with `jr_hortifruti_poster_animado.svg` and `public/jr_hortifruti_logo_circular.svg`.
-- Replaced Hero section banner video with static cover background `public/frutas-vegetais.jpg` and updated slogan to "Hortifruti fresquinho".
+- Replaced Hero section banner video with static cover background `public/frutas-vegetais.webp` and updated slogan to "Hortifruti fresquinho".
 - Updated Footer copyright information and social links.
 
 ### Removed

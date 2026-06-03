@@ -672,13 +672,13 @@ export const products = [
   {
     name: 'Abacaxi',
     category: 'Frutas',
-    image: '/assets/products/abacaxi.png',
+    image: '/assets/products/abacaxi.webp',
     description: 'Fruta tropical selecionada para sucos, sobremesas e consumo natural.',
   },
   {
     name: 'Abobrinha',
     category: 'Legumes',
-    image: '/assets/products/abobrinha.png',
+    image: '/assets/products/abobrinha.webp',
     description: 'Legume versátil para receitas leves e preparos do dia a dia.',
   },
   {
@@ -690,13 +690,13 @@ export const products = [
   {
     name: 'Ameixa',
     category: 'Frutas',
-    image: '/assets/products/ameixa.png',
+    image: '/assets/products/ameixa.webp',
     description: 'Fruta doce e saborosa, perfeita para consumo fresco.',
   },
   {
     name: 'Banana',
     category: 'Frutas',
-    image: '/assets/products/banana.png',
+    image: '/assets/products/banana.webp',
     description: 'Bananas selecionadas para o café da manhã, lanches e receitas.',
   },
   {
@@ -708,43 +708,43 @@ export const products = [
   {
     name: 'Goiaba',
     category: 'Frutas',
-    image: '/assets/products/goiaba.png',
+    image: '/assets/products/goiaba.webp',
     description: 'Goiabas frescas, ideais para sucos, doces e consumo natural.',
   },
   {
     name: 'Maçã',
     category: 'Frutas',
-    image: '/assets/products/maca.png',
+    image: '/assets/products/maca.webp',
     description: 'Maçãs selecionadas, práticas para o dia a dia.',
   },
   {
     name: 'Macaxeira / aipim',
     category: 'Raízes',
-    image: '/assets/products/macaxeira-aipim.png',
+    image: '/assets/products/macaxeira-aipim.webp',
     description: 'Raiz fresca para receitas tradicionais e refeições completas.',
   },
   {
     name: 'Morangos',
     category: 'Frutas',
-    image: '/assets/products/morangos.png',
+    image: '/assets/products/morangos.webp',
     description: 'Morangos selecionados conforme disponibilidade.',
   },
   {
     name: 'Quiabo',
     category: 'Legumes',
-    image: '/assets/products/quiabo.png',
+    image: '/assets/products/quiabo.webp',
     description: 'Quiabos frescos para preparos caseiros e pratos tradicionais.',
   },
   {
     name: 'Quiabo luxo',
     category: 'Legumes',
-    image: '/assets/products/quiabo-luxo.png',
+    image: '/assets/products/quiabo-luxo.webp',
     description: 'Quiabo selecionado em embalagem prática.',
   },
   {
     name: 'Uvas',
     category: 'Frutas',
-    image: '/assets/products/uvas.png',
+    image: '/assets/products/uvas.webp',
     description: 'Uvas selecionadas para consumo fresco.',
   },
 ];
@@ -774,19 +774,19 @@ jr-hortifruti/
 │     │  ├─ logo-circular.svg
 │     │  └─ brand-guide.png
 │     ├─ products/
-│     │  ├─ abacaxi.png
-│     │  ├─ abobrinha.png
+│     │  ├─ abacaxi.webp
+│     │  ├─ abobrinha.webp
 │     │  ├─ aipim-manteiga.png
-│     │  ├─ ameixa.png
-│     │  ├─ banana.png
+│     │  ├─ ameixa.webp
+│     │  ├─ banana.webp
 │     │  ├─ caqui-doce.png
-│     │  ├─ goiaba.png
-│     │  ├─ maca.png
-│     │  ├─ macaxeira-aipim.png
-│     │  ├─ morangos.png
-│     │  ├─ quiabo.png
-│     │  ├─ quiabo-luxo.png
-│     │  └─ uvas.png
+│     │  ├─ goiaba.webp
+│     │  ├─ maca.webp
+│     │  ├─ macaxeira-aipim.webp
+│     │  ├─ morangos.webp
+│     │  ├─ quiabo.webp
+│     │  ├─ quiabo-luxo.webp
+│     │  └─ uvas.webp
 │     └─ team/
 │        └─ junior-proprietario.png
 │

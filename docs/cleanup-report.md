@@ -20,7 +20,7 @@ The following folders contain the original template files and are kept in the `C
 - `COPY site completo/index.html`
 
 In the active root folder, all legacy references have been replaced.
-- `media/automne.mp4` -> Unused (replaced with static background image `public/frutas-vegetais.jpg` to prevent heavy media load).
+- `media/automne.mp4` -> Unused (replaced with static background image `public/frutas-vegetais.webp` to prevent heavy media load).
 - `images/logo-charraire.svg` -> Unused (replaced with `jr_hortifruti_poster_animado.svg`).
 
 ## 3. Search Results Verification
