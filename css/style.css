@@ -1543,7 +1543,7 @@ footer a:after {
 
   /* Slogan typography overrides to handle initial transforms */
   #slogan h1 span {
-    transform: translateY(40px);
+    transform: translate3d(0, 40px, 0);
   }
 
   /* Smooth slogan entry slide up animation */
@@ -1695,11 +1695,11 @@ footer a:after {
 @keyframes mobileSlideUp {
   0% {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translate3d(0, 40px, 0);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 

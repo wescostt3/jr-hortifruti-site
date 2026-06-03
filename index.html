@@ -425,6 +425,23 @@
 	<!-- CLIENT-SIDE ROUTING OVERRIDE FOR ONE-PAGE LAYOUT -->
 	<script>
 		window.addEventListener('DOMContentLoaded', () => {
+			// Force play the background video (handles mobile autoplay policies and low-power modes)
+			const heroVideo = document.querySelector('#hero-bg-container video');
+			if (heroVideo) {
+				const forcePlayVideo = () => {
+					heroVideo.play().then(() => {
+						document.removeEventListener('click', forcePlayVideo);
+						document.removeEventListener('touchstart', forcePlayVideo);
+					}).catch(err => console.log('Video play failed/blocked:', err));
+				};
+				// Attempt immediate play
+				heroVideo.play().catch(() => {
+					// Fallback to play on first user interaction if blocked
+					document.addEventListener('click', forcePlayVideo);
+					document.addEventListener('touchstart', forcePlayVideo);
+				});
+			}
+
 			// Disable popstate-based routing transitions from legacy script.min.js
 			window.onpopstate = null;
 
