@@ -32,7 +32,7 @@ export const seasonalCalendar = [
   {
     month: "Junho",
     fruits: ["Abacate", "Banana", "Carambola", "Kiwi", "Mexerica", "Tangerina"],
-    legumes: ["Batata-Doce", "Cará", "Mandioca", "Mandioquinha"],
+    legumes: ["Batata-Doce", "Cará", "Mandioca", "Mandioquinha", "Milho Verde"],
     greens: ["Agrião", "Alho-Poró", "Brócolis", "Couve", "Espinafre"]
   },
   {

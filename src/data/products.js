@@ -196,5 +196,41 @@ export const products = [
     desc: "Batata-doce selecionada, saborosa e nutritiva, perfeita para assar ou cozinhar.",
     image: "public/batata-doce.png",
     badge: "Fresco do Dia"
+  },
+  {
+    id: "milho-verde",
+    name: "Milho Verde",
+    category: "Legumes",
+    unit: "bandeja",
+    desc: "Milho verde fresco e doce, perfeito para cozinhar, assar ou preparar receitas típicas juninas.",
+    image: "public/milho.png",
+    badge: "Fresco do Dia"
+  },
+  {
+    id: "carambola",
+    name: "Carambola",
+    category: "Frutas",
+    unit: "kg",
+    desc: "Carambolas frescas e selecionadas, com formato de estrela e sabor levemente azedinho e refrescante.",
+    image: "public/carambola.png",
+    badge: "Fresco do Dia"
+  },
+  {
+    id: "mexerica",
+    name: "Mexerica",
+    category: "Frutas",
+    unit: "kg",
+    desc: "Mexericas bem docinhas e fáceis de descascar, extremamente aromáticas e frescas.",
+    image: "public/mexerica.png",
+    badge: "Fresco do Dia"
+  },
+  {
+    id: "kiwi",
+    name: "Kiwi",
+    category: "Frutas",
+    unit: "kg",
+    desc: "Kiwis selecionados de polpa verde e suculenta, ricos em vitaminas e saborosos.",
+    image: "public/kiwi.png",
+    badge: "Fresco do Dia"
   }
 ];

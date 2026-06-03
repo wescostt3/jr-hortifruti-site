@@ -1386,3 +1386,79 @@ footer a:after {
   vertical-align: middle;
 }
 
+/* Scrolled Header Auto-Hide & Hover-Reveal Effect (Desktop only) */
+@media (min-width: 769px) {
+  #header.fix {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: translateY(-100%) !important;
+    transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1) !important;
+    animation: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  /* Reveal when header is hovered, menu is open, or menuOpen is on html */
+  #header.fix:hover,
+  .open+#header.fix,
+  .menuOpen #header.fix {
+    transform: translateY(0) !important;
+  }
+
+  /* Transition sibling green/blue background cache bar */
+  #header.fix + .cache {
+    transition: transform 0.35s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  }
+
+  #header.fix:hover + .cache,
+  .open+#header.fix + .cache,
+  .menuOpen #header.fix + .cache {
+    transform: translateY(0) !important;
+  }
+
+  /* Viewport-top trigger zone to detect mouse hover when header is hidden */
+  #header.fix::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background: transparent;
+    pointer-events: auto;
+    z-index: 9999;
+  }
+}
+
+/* Developer Credits inside Contact Section */
+.contact-credits {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  color: #6B7280;
+}
+.contact-credits a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--deep-green) !important;
+  font-weight: bold;
+  transition: color 0.2s, transform 0.2s;
+}
+.contact-credits a:hover {
+  color: var(--medium-green) !important;
+  transform: translateY(-1px);
+}
+.contact-credits img {
+  height: 20px;
+  width: auto;
+  vertical-align: middle;
+}
+
+
