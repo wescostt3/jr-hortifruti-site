@@ -1181,9 +1181,70 @@ footer a:after {
 
 /* Custom logo sizing and menu color overrides */
 #logo img {
-  height: 11em !important;
+  height: 15em !important;
   width: auto !important;
-  max-height: 170px !important;
+  max-height: 230px !important;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  #logo img {
+    height: 10em !important;
+    max-height: 150px !important;
+  }
+}
+
+@media (max-width: 425px) {
+  #logo img {
+    height: 8.5em !important;
+    max-height: 120px !important;
+  }
+}
+
+/* Move Navigation to the left corner below contact button on desktop */
+@media (min-width: 1025px) {
+  #menuH {
+    position: absolute !important;
+    left: 30px !important;
+    top: 120px !important;
+    margin-top: 0 !important;
+    text-align: left !important;
+    z-index: 50 !important;
+  }
+  #menuH .menu {
+    padding: 20px 0 0 0 !important;
+    width: 200px !important;
+    height: auto !important;
+    text-align: left !important;
+  }
+  #menuH span {
+    text-align: left !important;
+  }
+  #menuH span:after {
+    margin: 10px 0 -30px 0 !important;
+    transform-origin: 0 0 !important;
+  }
+  #menuH .submenu {
+    margin: 0 !important;
+    text-align: left !important;
+  }
+  #menuH .submenu a {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+  #menuH .submenu a:hover {
+    transform: translateX(10px) !important;
+  }
+  #menuH .submenu a:before,
+  #menuH .submenu a:after {
+    left: -15px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  #menuH {
+    display: none !important;
+  }
 }
 
 #menu .submenu a,
