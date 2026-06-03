@@ -101,20 +101,12 @@
 	<div id="main">
 
 	<section class="fullScreen" id="home">
-		<!-- BACKGROUND CONTAINER (Dynamic Video for Desktop, Image for Mobile) -->
+		<!-- BACKGROUND CONTAINER (Video Background for Desktop and Mobile) -->
 		<div id="hero-bg-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; overflow: hidden;">
-			<img src="public/frutas-vegetais.jpg" alt="Hortifruti" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(45%);" width="1920" height="1080">
+			<video autoplay loop muted playsinline poster="public/frutas-vegetais.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(45%); z-index: 0;">
+				<source src="media/video-hortifruti.mp4" type="video/mp4">
+			</video>
 		</div>
-		<script>
-			(function() {
-				if (window.innerWidth > 1024) {
-					var container = document.getElementById('hero-bg-container');
-					if (container) {
-						container.innerHTML = '<video autoplay loop muted playsinline poster="public/frutas-vegetais.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(45%); z-index: 0;"><source src="media/video-hortifruti.mp4" type="video/mp4"></video>';
-					}
-				}
-			})();
-		</script>
 
 		<!-- SLOGAN -->
 		<div id="slogan">
@@ -182,6 +174,8 @@
 						<p>Receba no conforto da sua casa com agilidade e cuidado, dentro da área de entrega de Sarapuí e região.</p>
 					</li>
 				</ul>
+			</div>
+		</div>
 	</section>
 
 	<!-- SECTION: CALENDÁRIO SAZONAL -->
