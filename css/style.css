@@ -1703,4 +1703,17 @@ footer a:after {
   }
 }
 
+/* Responsividade Mobile - Ajustes do Menu e Imagem do Junior */
+@media (max-width: 768px) {
+  /* Ajusta o espaçamento superior do menu mobile para evitar colisão com o logotipo circular */
+  #menu .wrap>ul {
+    margin-top: 190px !important;
+  }
+}
 
+@media (max-width: 600px) {
+  /* Ajusta o enquadramento da imagem do Junior para priorizar o topo e evitar cabeça cortada */
+  .owner-image {
+    object-position: center top !important;
+  }
+}
