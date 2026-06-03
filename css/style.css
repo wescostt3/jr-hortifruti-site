@@ -1295,3 +1295,33 @@ footer a:after {
   }
 }
 
+/* Mobile Menu Credits (HeziTech) */
+.menu-credits {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.menu-credits a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff !important;
+  font-weight: bold;
+  transition: color 0.2s, transform 0.2s;
+}
+.menu-credits a:hover {
+  color: var(--gold) !important;
+  transform: translateY(-1px);
+}
+.menu-credits img {
+  height: 18px;
+  width: auto;
+  vertical-align: middle;
+}
+
