@@ -1712,8 +1712,15 @@ footer a:after {
 }
 
 @media (max-width: 600px) {
-  /* Ajusta o enquadramento da imagem do Junior para priorizar o topo e evitar cabeça cortada */
+  /* Remove a altura fixa do container no mobile para que cresça livremente */
+  .owner-image-container {
+    width: 100% !important;
+    height: auto !important;
+  }
+  /* Exibe a imagem por inteiro (sem cortes) preservando a proporção original */
   .owner-image {
-    object-position: center top !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
   }
 }
