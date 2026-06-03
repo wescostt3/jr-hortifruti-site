@@ -1,6 +1,8 @@
 <!DOCTYPE html><html lang="pt-BR"><head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" type="image/svg+xml" href="public/jr_hortifruti_logo_circular.svg">
 	<link rel="shortcut icon" href="public/jr_hortifruti_logo_circular.svg" type="image/x-icon">
@@ -63,7 +65,7 @@
 			<span>Desenvolvido por</span>
 			<a href="https://www.hezitech.com.br" target="_blank" rel="noopener noreferrer" aria-label="Acessar o site da HeziTech">
 				HeziTech
-				<img src="public/hezitech_logo.png" alt="HeziTech">
+				<img src="public/hezitech_logo.png" alt="HeziTech" width="80" height="20">
 			</a>
 		</div>
 	</div>
@@ -82,7 +84,7 @@
 
 			<!-- LOGO -->
 			<a href="#home" id="logo" style="margin-top: 5px;">
-				<img src="public/jr_hortifruti_logo_circular.svg" alt="JR Hortifruti Delivery" style="height: 8.5em; width: auto; max-height: 140px;">
+				<img src="public/jr_hortifruti_logo_circular.svg" alt="JR Hortifruti Delivery" style="height: 8.5em; width: auto; max-height: 140px;" width="140" height="140">
 				<p style="color: var(--gold) !important; font-family: 'Big Shoulders Display', sans-serif !important; letter-spacing: 2px !important; font-weight: 800 !important; right: auto; left: 50%; transform: translateX(-50%); font-size: 1.1em; bottom: -28px; white-space: nowrap;">Hortifruti Delivery</p>
 			</a>
 
@@ -99,10 +101,20 @@
 	<div id="main">
 
 	<section class="fullScreen" id="home">
-		<!-- BACKGROUND VIDEO -->
-		<video autoplay loop muted playsinline poster="public/frutas-vegetais.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(45%); z-index: 0;">
-			<source src="media/video-hortifruti.mp4" type="video/mp4">
-		</video>
+		<!-- BACKGROUND CONTAINER (Dynamic Video for Desktop, Image for Mobile) -->
+		<div id="hero-bg-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; overflow: hidden;">
+			<img src="public/frutas-vegetais.jpg" alt="Hortifruti" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(45%);" width="1920" height="1080">
+		</div>
+		<script>
+			(function() {
+				if (window.innerWidth > 1024) {
+					var container = document.getElementById('hero-bg-container');
+					if (container) {
+						container.innerHTML = '<video autoplay loop muted playsinline poster="public/frutas-vegetais.jpg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; filter: brightness(45%); z-index: 0;"><source src="media/video-hortifruti.mp4" type="video/mp4"></video>';
+					}
+				}
+			})();
+		</script>
 
 		<!-- SLOGAN -->
 		<div id="slogan" style="top: 44vh !important;">
@@ -255,7 +267,7 @@
 			
 			<div class="owner-card">
 				<div class="owner-image-container">
-					<img class="owner-image" src="public/junior-proprietario-hortifruti.png" alt="Junior Proprietário" loading="lazy" decoding="async">
+					<img class="owner-image" src="public/junior-proprietario-hortifruti.png" alt="Junior Proprietário" loading="lazy" decoding="async" width="300" height="300">
 				</div>
 				<div class="owner-info">
 					<h3 class="owner-name">Junior</h3>
@@ -316,7 +328,7 @@
 			<p class="section-subtitle">Fale direto com a gente e garanta produtos fresquinhos e selecionados.</p>
 			
 			<div style="margin: 40px auto; max-width: 500px; text-align: center;">
-				<img src="public/jr_hortifruti_logo_circular.svg" alt="JR Hortifruti" style="height: 6em; margin-bottom: 20px;">
+				<img src="public/jr_hortifruti_logo_circular.svg" alt="JR Hortifruti" style="height: 6em; margin-bottom: 20px;" width="96" height="96">
 				<h3 style="font-size: 1.8em; color: var(--deep-green); font-weight: bold; margin-bottom: 10px;">JR Hortifruti Delivery</h3>
 				<p style="font-family: robotoRegular, sans-serif; font-size: 0.95em; color: #4B5563; margin-bottom: 30px;">
 					CNPJ: 56.017.298/0001-05<br>
@@ -329,7 +341,7 @@
 					<span>Desenvolvido por</span>
 					<a href="https://www.hezitech.com.br" target="_blank" rel="noopener noreferrer" aria-label="Acessar o site da HeziTech">
 						HeziTech
-						<img src="public/hezitech_logo.png" alt="HeziTech">
+						<img src="public/hezitech_logo.png" alt="HeziTech" width="80" height="20">
 					</a>
 				</div>
 			</div>
@@ -345,7 +357,7 @@
 				<span>Desenvolvido por</span>
 				<a href="https://www.hezitech.com.br" target="_blank" rel="noopener noreferrer" aria-label="Acessar o site da HeziTech">
 					HeziTech
-					<img src="public/hezitech_logo.png" alt="HeziTech">
+					<img src="public/hezitech_logo.png" alt="HeziTech" width="80" height="20">
 				</a>
 			</div>
 			<nav>
