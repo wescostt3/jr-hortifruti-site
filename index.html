@@ -395,47 +395,50 @@
 	<!-- CLIENT-SIDE ROUTING OVERRIDE FOR ONE-PAGE LAYOUT -->
 	<script>
 		window.addEventListener('DOMContentLoaded', () => {
+			// Disable popstate-based routing transitions from legacy script.min.js
+			window.onpopstate = null;
+
+			// Override legacy transition methods to prevent showing the black screen cache overlay
 			if (window.page) {
-				window.page.href = function(event) {
-					let target = event.target;
-					while (target && target.tagName !== 'A') {
-						target = target.parentNode;
-					}
-					
-					if (!target) return;
-					
-					const href = target.getAttribute('href');
-					
-					// Smooth scroll for internal hash links
-					if (href && href.startsWith('#')) {
-						event.preventDefault();
-						const targetEl = document.querySelector(href);
-						if (targetEl) {
-							targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-							
-							// Auto-close menu if open
-							if (document.documentElement.classList.contains('menuOpen')) {
-								if (window.toggle && window.toggle.menu) {
-									window.toggle.menu();
-								}
+				window.page.change = function() { console.log('page.change bypassed'); };
+				window.page.call = function() { console.log('page.call bypassed'); };
+				window.page.hide = function() { console.log('page.hide bypassed'); };
+				window.page.show = function() { console.log('page.show bypassed'); };
+			}
+
+			// Ensure pageCache is hidden
+			const pageCache = document.getElementById('pageCache');
+			if (pageCache) {
+				pageCache.style.display = 'none';
+			}
+
+			// Global click event delegation for smooth scrolling on internal links
+			document.addEventListener('click', (event) => {
+				let target = event.target;
+				while (target && target.tagName !== 'A') {
+					target = target.parentNode;
+				}
+				
+				if (!target) return;
+				
+				const href = target.getAttribute('href');
+				
+				// Smooth scroll for internal hash links
+				if (href && href.startsWith('#')) {
+					event.preventDefault();
+					const targetEl = document.querySelector(href);
+					if (targetEl) {
+						targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+						
+						// Auto-close mobile navigation menu if open
+						if (document.documentElement.classList.contains('menuOpen')) {
+							if (window.toggle && window.toggle.menu) {
+								window.toggle.menu();
 							}
 						}
-					} else {
-						// Pass through external or service links
-						if (href && (href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel'))) {
-							return;
-						}
-						
-						event.preventDefault();
-						if (window.page.old == target.href) {
-							if (window.close && window.close.menu) window.close.menu();
-							return;
-						}
-						history.pushState(null, null, target.href);
-						window.page.change();
 					}
-				};
-			}
+				}
+			});
 		});
 	</script>
 </body></html>

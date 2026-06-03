@@ -1222,3 +1222,8 @@ footer a:after {
   letter-spacing: 3px !important;
 }
 
+/* Force-hide legacy page transition overlays */
+#pageCache {
+  display: none !important;
+}
+
