@@ -1201,43 +1201,48 @@ footer a:after {
   }
 }
 
-/* Move Navigation to the left corner below contact button on desktop */
+/* Move Navigation to the left corner below contact button on desktop and center align its components vertically */
 @media (min-width: 1025px) {
   #menuH {
     position: absolute !important;
     left: 30px !important;
     top: 120px !important;
     margin-top: 0 !important;
-    text-align: left !important;
     z-index: 50 !important;
+    text-align: center !important;
   }
   #menuH .menu {
     padding: 20px 0 0 0 !important;
     width: 200px !important;
     height: auto !important;
-    text-align: left !important;
+    text-align: center !important;
   }
   #menuH span {
-    text-align: left !important;
+    text-align: center !important;
+    display: block !important;
   }
   #menuH span:after {
-    margin: 10px 0 -30px 0 !important;
-    transform-origin: 0 0 !important;
+    margin: 10px auto -30px auto !important;
+    transform-origin: center center !important;
   }
   #menuH .submenu {
-    margin: 0 !important;
-    text-align: left !important;
+    margin: 0 auto !important;
+    text-align: center !important;
   }
   #menuH .submenu a {
     margin-left: 0 !important;
     padding-left: 0 !important;
+    text-align: center !important;
   }
   #menuH .submenu a:hover {
-    transform: translateX(10px) !important;
+    transform: scale(1.05) !important;
   }
   #menuH .submenu a:before,
   #menuH .submenu a:after {
-    left: -15px !important;
+    display: none !important;
+  }
+  #menuH .submenu:after {
+    margin: 25px auto !important;
   }
 }
 

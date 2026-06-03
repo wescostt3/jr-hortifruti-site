@@ -232,5 +232,14 @@ export const products = [
     desc: "Kiwis selecionados de polpa verde e suculenta, ricos em vitaminas e saborosos.",
     image: "public/kiwi.png",
     badge: "Fresco do Dia"
+  },
+  {
+    id: "alface",
+    name: "Alface Crespa",
+    category: "Verduras",
+    unit: "maço",
+    desc: "Alface crespa fresca e crocante, perfeita para saladas saudáveis no dia a dia.",
+    image: "public/alface.png",
+    badge: "Fresco do Dia"
   }
 ];
