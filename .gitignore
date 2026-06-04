@@ -1,5 +1,79 @@
-.gemini/
+# ==============================================================================
+# J.R Hortifruti Delivery — Configuração de Segurança (.gitignore)
+# ==============================================================================
+
+# --- SEGURANÇA E CREDECIAS (CRÍTICO) ---
+# Ignora arquivos de variáveis de ambiente que contêm segredos e chaves de API
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.development
+.env.production
+.env.test
+.env*.local
+
+# Ignora chaves privadas e certificados de segurança
+*.pem
+*.key
+*.ppk
+*.pfx
+*.p12
+*.cer
+*.crt
+*.pub
+*.der
+id_rsa
+id_dsa
+
+# --- ARQUIVOS DE RELATÓRIO E BACKUPS ---
+# Exclui relatórios de apresentação pessoal e backups temporários
+project_presentation_report.md
+*.bak
+*.tmp
+*.swp
+*~
+
+# --- VERCEL E DEPLOYMENT CACHE ---
+# Ignora diretórios gerados por ferramentas de deploy locais (pode conter tokens de projeto)
+.vercel/
+.vercel_build_output/
+dist/
+build/
+out/
+.next/
+
+# --- LOGS E MONITORAMENTO ---
+# Impede o rastreamento de logs que podem vazar caminhos físicos do servidor ou erros internos
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- DIRETÓRIOS DE DEPENDÊNCIAS ---
+# Dependências do NodeJS (se instaladas localmente)
+node_modules/
+
+# --- ARQUIVOS DE SISTEMA OPERACIONAL (S.O.) ---
+# Impede lixo de metadados do sistema operacional de poluir o repositório
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Thumbs.db:encryptable
+desktop.ini
+
+# --- IDEs E EDITORES DE CÓDIGO ---
 .vscode/
 .idea/
-*.log
-project_presentation_report.md
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.gemini/
